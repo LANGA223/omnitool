@@ -72,6 +72,17 @@ export default function Navbar({ darkMode, setDarkMode, onHomeClick }) {
             )}
           </div>
 
+          {/* Sponsored Deals Button */}
+          <a
+            href="https://www.profitableratecpmnetwork.com/nrjngm9dic?key=064e41144d8b4e4740967c229b5f8f94"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Partner Deals"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold shadow-sm shadow-orange-500/20 transition-all focus:outline-none focus:ring-2 focus:ring-amber-500"
+          >
+            <span>🔥 Deals</span>
+          </a>
+
           {/* Dark / Light Toggle */}
           <button
             onClick={() => setDarkMode(!darkMode)}

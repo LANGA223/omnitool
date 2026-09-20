@@ -206,6 +206,20 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-brand-500/20 selection:text-brand-600">
       
+      {/* Top Sponsored Announcement Bar */}
+      <a
+        href="https://www.profitableratecpmnetwork.com/nrjngm9dic?key=064e41144d8b4e4740967c229b5f8f94"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full bg-gradient-to-r from-amber-600 via-orange-600 to-rose-600 hover:from-amber-500 hover:to-rose-500 text-white py-2 px-4 text-xs font-semibold text-center flex items-center justify-center gap-2 transition-all group shadow-sm z-50"
+      >
+        <span className="px-1.5 py-0.5 rounded bg-white/20 text-[10px] font-black uppercase tracking-wider">
+          Partner Offer
+        </span>
+        <span>⚡ Check out today's trending software deals & exclusive developer discounts</span>
+        <span className="group-hover:translate-x-1 transition-transform">➔</span>
+      </a>
+
       {/* Sticky Navbar */}
       <Navbar 
         darkMode={darkMode} 
@@ -305,6 +319,43 @@ export default function App() {
                     onSelect={(id) => setSelectedToolId(id)}
                   />
                 ))}
+
+                {/* Featured Partner Deals Smartlink Card */}
+                <a
+                  href="https://www.profitableratecpmnetwork.com/nrjngm9dic?key=064e41144d8b4e4740967c229b5f8f94"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex flex-col justify-between p-5 rounded-2xl bg-gradient-to-br from-amber-500/5 via-orange-500/5 to-rose-500/5 dark:from-amber-950/20 dark:to-orange-950/20 border-2 border-dashed border-amber-300 dark:border-amber-700/60 hover:border-amber-500 dark:hover:border-amber-400 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden"
+                >
+                  <div>
+                    <div className="flex items-start justify-between gap-3 mb-3.5">
+                      <div className="p-3 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <Sparkles className="w-5 h-5" />
+                      </div>
+                      <span className="text-[11px] font-extrabold tracking-wide uppercase px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-300 dark:border-amber-700">
+                        Special Offer
+                      </span>
+                    </div>
+
+                    <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors flex items-center gap-1.5">
+                      🔥 Exclusive Partner Deals
+                    </h3>
+
+                    <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
+                      Discover curated discounts on software, high-speed hosting, productivity tools, and special perks.
+                    </p>
+                  </div>
+
+                  <div className="mt-4 pt-3 border-t border-amber-200/60 dark:border-amber-800/40 flex items-center justify-between">
+                    <span className="text-[11px] font-mono font-medium text-amber-600 dark:text-amber-400">
+                      Sponsored
+                    </span>
+                    <div className="flex items-center gap-1 text-xs font-bold text-amber-600 dark:text-amber-400 group-hover:translate-x-1 transition-transform">
+                      <span>Explore Deals</span>
+                      <span>➔</span>
+                    </div>
+                  </div>
+                </a>
               </div>
             ) : (
               <div className="text-center py-16 p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
